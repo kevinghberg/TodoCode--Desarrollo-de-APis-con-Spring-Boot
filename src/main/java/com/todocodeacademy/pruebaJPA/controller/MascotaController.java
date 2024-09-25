@@ -12,7 +12,6 @@ public class MascotaController {
     @Autowired
     private IMascotaService mascotaService;
 
-
     @PostMapping("/mascotas/crear")
     public String saveMascota(@RequestBody Mascota mascota) {
         mascotaService.saveMascota(mascota);
